@@ -4,7 +4,8 @@ second_number = int(input())
 for i in range(first_number, second_number + 1):
     first_perfect_square = None
     sqrt_value = i**0.5
-    if sqrt_value % 2 == 0:
+
+    if (sqrt_value // 1) * (sqrt_value // 1) == i:
         first_perfect_square = i
         print(first_perfect_square)
         break
